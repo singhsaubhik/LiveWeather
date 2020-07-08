@@ -1,0 +1,28 @@
+.addcity {
+  width: 30rem;
+  height: 40rem;
+  background-color: white;
+  border-radius: 1rem;
+
+  color: black;
+  font-family: "ABeeZee";
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  &__add_button {
+    width: 40%;
+    height: 40%;
+  }
+
+  &__city {
+    width: 95%;
+  }
+
+  &__title {
+    margin-top: 2rem;
+    color: rgb(59, 59, 59);
+  }
+}

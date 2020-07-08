@@ -1,0 +1,52 @@
+.card {
+  width: 30rem;
+  height: 40rem;
+  background-color: white;
+  border-radius: 1rem;
+
+  color: black;
+  font-family: "ABeeZee";
+  font-weight: 300;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  transition: all .2s ease;
+
+  cursor: pointer;
+
+  &:hover{
+    transform: translateY(-.5rem);
+  }
+
+  &__cityname {
+    margin-top: 2rem;
+    color: rgb(59, 59, 59);
+  }
+
+  &__weather {
+    height: 40%;
+    width: 40%;
+  }
+
+  &__temp {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 5rem;
+
+    margin-bottom: 5rem;
+
+    span {
+      font-size: medium;
+      margin-bottom: auto;
+      margin-top: 1rem;
+    }
+  }
+
+  &__weather-name {
+    color: rgb(71, 71, 71);
+  }
+}

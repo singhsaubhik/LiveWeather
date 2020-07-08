@@ -1,0 +1,41 @@
+.home {
+  width: 100%;
+  min-height: 95vh;
+  background: linear-gradient(180deg, #00c2ff 2.6%, #011099 100%);
+  color: white;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+
+
+  &__today {
+    margin: 1rem 0;
+    font-family: Fredoka One;
+    font-size: 2.5rem;
+  }
+
+  &__cards {
+    width: 100%;
+    display: flex;
+    // background-color: yellowgreen;
+    margin-top: 10rem;
+    justify-content: center;
+
+    flex-wrap: wrap;
+    align-content: space-around;
+
+    &> *:not(:first-child){
+      margin-left: 5rem;
+    }
+
+    &> *{
+      margin-top: 10rem;
+      margin-bottom: 10rem;
+    }
+
+    &-addcity{
+      display: flex;
+    }
+  }
+}
