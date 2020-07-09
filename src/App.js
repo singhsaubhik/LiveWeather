@@ -8,16 +8,18 @@ import WeatherAPI from './services/weather-api';
 import AddCityContainer from './containers/add-city/add-city.container';
 import About from './containers/about/about.container';
 
-const DATA = [
-  { "coord": { "lon": 73.86, "lat": 18.52 }, "weather": [{ "id": 500, "main": "Rain", "description": "light rain", "icon": "10d" }], "base": "stations", "main": { "temp": 28.93, "feels_like": 29.23, "temp_min": 28.93, "temp_max": 28.93, "pressure": 1004, "humidity": 67, "sea_level": 1004, "grnd_level": 943 }, "wind": { "speed": 6.42, "deg": 238 }, "rain": { "1h": 0.38 }, "clouds": { "all": 49 }, "dt": 1594198492, "sys": { "country": "IN", "sunrise": 1594168428, "sunset": 1594215906 }, "timezone": 19800, "id": 1259229, "name": "Pune", "cod": 200 },
-  { "coord": { "lon": 73.86, "lat": 18.52 }, "weather": [{ "id": 500, "main": "Storm", "description": "light rain", "icon": "10d" }], "base": "stations", "main": { "temp": 23.93, "feels_like": 29.23, "temp_min": 28.93, "temp_max": 28.93, "pressure": 1004, "humidity": 67, "sea_level": 1004, "grnd_level": 943 }, "wind": { "speed": 6.42, "deg": 238 }, "rain": { "1h": 0.38 }, "clouds": { "all": 49 }, "dt": 1594198492, "sys": { "country": "GB", "sunrise": 1594168428, "sunset": 1594215906 }, "timezone": 19800, "id": 1259229, "name": "London", "cod": 200 },
+
+const CITY_LIST = [
+  "London,uk",
+  "New Delhi,in",
+  "Pune,in"
 ];
 
 class App extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = { weatherCards: DATA };
+    this.state = { weatherCards: [], cityList: CITY_LIST };
     this.weatherAPI = new WeatherAPI();
   }
 
@@ -27,11 +29,18 @@ class App extends React.Component {
     this.setState({ weatherCards });
   }
 
+
+  getCityListWeather() {
+    this.state.cityList.forEach(city => {
+      this.weatherAPI.getWeatherByCityName(city)
+        .then(res => this.addWeatherCard(res.data))
+        .catch(err => console.log(err)
+        );
+    });
+  }
+
   componentDidMount() {
-    this.weatherAPI.getWeatherByCityName("Jammu,in")
-      .then(res => this.addWeatherCard(res.data))
-      .catch(err => console.log(err)
-      );
+    this.getCityListWeather()
   }
 
   render() {
