@@ -8,7 +8,6 @@
   flex-direction: column;
   align-items: center;
 
-
   &__today {
     margin: 1rem 0;
     font-family: Fredoka One;
@@ -25,14 +24,22 @@
     flex-wrap: wrap;
     align-content: space-around;
 
-    &> *{
+    & > * {
       margin-top: 10rem;
       margin-bottom: 10rem;
       margin-left: 5rem;
     }
 
-    &-addcity{
+    &-addcity {
       display: flex;
     }
+  }
+}
+
+@media (max-width: 500px) {
+  .home .home__cards > * {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-left: 0;
   }
 }

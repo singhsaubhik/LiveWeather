@@ -46,7 +46,10 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Headers />
+        <div className="App__headers">
+          <Headers />
+        </div>
+
         <Switch>
           <Route path="/" exact render={() => <Redirect to="/home" />} />
           <Route path="/home" render={() => <Home cards={this.state.weatherCards} />} />
