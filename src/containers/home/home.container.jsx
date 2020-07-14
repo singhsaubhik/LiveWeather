@@ -21,6 +21,7 @@ const Home = (props) => {
                     <AddCity />
                 </div>
             </div>
+
         </div>
     );
 };
