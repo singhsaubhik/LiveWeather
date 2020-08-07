@@ -1,68 +1,174 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!--
+*** Thanks for checking out this README Template. If you have a suggestion that would
+*** make this better, please fork the repo and create a pull request or simply open
+*** an issue with the tag "enhancement".
+*** Thanks again! Now go create something AMAZING! :D
+-->
 
-## Available Scripts
+<!-- PROJECT SHIELDS -->
+<!--
+*** I'm using markdown "reference style" links for readability.
+*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+*** See the bottom of this document for the declaration of the reference variables
+*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+*** https://www.markdownguide.org/basic-syntax/#reference-style-links
+-->
 
-In the project directory, you can run:
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-### `npm start`
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+<a>
+<img src="https://raw.githubusercontent.com/singhsaubhik/LiveWeather/master/public/logo200.png" alt="Logo" width="80" height="80">
+  </a>
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  <h1 align="center">Live Weather</h1>
+  <a href="https://liveweather1.netlify.app">
+    <h3 align="center">Demo</h3>
+  </a>
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+  <p align="center">
+    Yet Another Weather App with material design
+    <br />
+    <br />
+    <a href="https://github.com/singhsaubhik/LiveWeather/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/singhsaubhik/LiveWeather/issues">Request Feature</a>
+  </p>
+</p>
 
-### `npm test`
+<!-- TABLE OF CONTENTS -->
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Table of Contents
 
-### `npm run build`
+- [About the Project](#about-the-project)
+  - [Built With](#built-with)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Acknowledgements](#acknowledgements)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<!-- ABOUT THE PROJECT -->
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## About The Project
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<img align="center" src="https://raw.githubusercontent.com/singhsaubhik/LiveWeather/master/screenshots/img1.png" alt="ScreenShot1" width="1200" height="500">
 
-### `npm run eject`
+<br />
+<br />
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+There are many great Weather apps available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. This wil really come very close to your nedd.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Here's why:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- This is crafted very carefully using material design.
+- The implementation has been kept as simple as possible so that any web dev can understand , modify and learn from it.
+- **Vanilla React**: No thisrd party library is used to make robust and clean.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+### Built With
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- [React](https://reactjs.org)
+- [Saas](https://sass-lang.com)
+- [OpenWeatherMap API](https://openweathermap.org/)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<!-- GETTING STARTED -->
 
-### Code Splitting
+## Getting Started
+You can clone this repo to start develop locally.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+### Prerequisites
 
-### Analyzing the Bundle Size
+Following are the prerequisites:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+- [npm](https://npmjs.com/) (recommended) / [yarn](https://yarnpkg.com/)
 
-### Making a Progressive Web App
+```sh
+npm install npm@latest -g
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+### Installation
 
-### Advanced Configuration
+1. Get a free API Key at [https://openweathermap.org/](https://openweathermap.org/)
+2. Clone the repo
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+```sh
+git clone https://github.com/singhsaubhik/LiveWeather.git
+```
 
-### Deployment
+3. Install NPM packages
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+```sh
+npm install
+```
 
-### `npm run build` fails to minify
+4. Create .env file in root and place the API_KEY like below. Make sure key is without double quotes.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+```sh
+REACT_APP_API_KEY=YOUR_API_KEY
+```
+
+
+<!-- ROADMAP -->
+
+## Roadmap
+
+- Add city
+- Expand indivisual city for more info
+
+See the [open issues](https://github.com/singhsaubhik/LiveWeather/issues) for a list of proposed features (and known issues).
+
+<!-- CONTRIBUTING -->
+
+## Contributing
+
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+<!-- LICENSE -->
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+<!-- CONTACT -->
+
+## Contact
+
+Saubhik Singh - [@singhsaubhik1](https://twitter.com/singhsaubhik1) - saubhik.singh01@gmail.com
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## Acknowledgements
+
+- [Google Fonts](https://fonts.google.com)
+- [FontAwesome](https://fontawesome.com)
+- [OpenWeatherMapAPI](https://openweathermap.org)
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[contributors-shield]: https://img.shields.io/github/contributors/singhsaubhik/LiveWeather.svg?style=flat-square
+[contributors-url]: https://github.com/singhsaubhik/LiveWeather/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/singhsaubhik/LiveWeather.svg?style=flat-square
+[forks-url]: https://github.com/singhsaubhik/LiveWeather/network/members
+[issues-shield]: https://img.shields.io/github/issues/singhsaubhik/LiveWeather.svg?style=flat-square
+[issues-url]: https://github.com/singhsaubhik/LiveWeather/issues
+[license-shield]: https://img.shields.io/github/license/singhsaubhik/LiveWeather.svg?style=flat-square
+[license-url]: https://github.com/singhsaubhik/LiveWeather/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/saubhik-singh-b71584126

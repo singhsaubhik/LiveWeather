@@ -2,7 +2,7 @@ import axios from "axios";
 
 class WeatherAPI {
     constructor() {
-        this.apiKey = "25b04344cf0a6cf9401cc21903911f82";
+        this.apiKey = process.env.REACT_APP_API_KEY;
         this.baseUrl = "https://api.openweathermap.org";
     }
 
