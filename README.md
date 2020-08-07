@@ -10,9 +10,11 @@
   </a>
 
   <h1 align="center">Live Weather</h1>
-  <a href="https://liveweather1.netlify.app">
-    <h3 align="center">Demo</h3>
-  </a>
+  <div align="center">
+    <strong>
+      <a href="https://liveweather1.netlify.app">Demo</a>
+    </strong>
+  </div>
 
   <p align="center">
     Yet Another Weather App with material design
