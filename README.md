@@ -92,7 +92,7 @@ Following are the prerequisites:
 - [npm](https://npmjs.com/) (recommended) / [yarn](https://yarnpkg.com/)
 
 ```sh
-npm install npm@latest -g
+npm install npm -g
 ```
 
 ### Installation
